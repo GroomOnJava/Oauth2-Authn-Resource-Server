@@ -1,0 +1,128 @@
+{
+	"id": "b000dc9d-dea7-6de7-df1e-0a6123d3a973",
+	"name": "MyAuthen",
+	"description": "",
+	"order": [
+		"23d5dc02-ed63-b7d5-3b35-75204e01b443",
+		"081d01e4-e430-ce44-9322-66a55bb2d975"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501848023862,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "081d01e4-e430-ce44-9322-66a55bb2d975",
+			"headers": "Authorization: Bearer b6d9a16c-7979-46de-a111-5b2ccef1acf2\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer b6d9a16c-7979-46de-a111-5b2ccef1acf2",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9002/",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1502168386199,
+			"name": "http://localhost:9001/",
+			"description": "",
+			"collectionId": "b000dc9d-dea7-6de7-df1e-0a6123d3a973",
+			"responses": []
+		},
+		{
+			"id": "23d5dc02-ed63-b7d5-3b35-75204e01b443",
+			"headers": "Authorization: Basic dGVzdDp0ZXN0\nAccept: application/json\n//Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic dGVzdDp0ZXN0",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:9000/authorize/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "bill",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "abc123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "read",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roles",
+					"value": "ADMIN",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1502168382915,
+			"name": "http://localhost:9000/authorize/oauth/token",
+			"description": "",
+			"collectionId": "b000dc9d-dea7-6de7-df1e-0a6123d3a973",
+			"responses": []
+		}
+	]
+}
