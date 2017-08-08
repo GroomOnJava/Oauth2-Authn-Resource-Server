@@ -13,3 +13,15 @@ Click on "Update Request" will generate Authorization code as shown below.
 
 Request Body
 ![ScreenShot](/screenshots/authn_server3.jpg?raw=true "Authn Server")
+
+
+Resource-Server in POSTMAN
+--------------------------------
+Hit with following url, will results in validate Auth token and return the response. 
+URL: http://localhost:9002/
+
+![ScreenShot](/screenshots/Resource_Server_Response.jpg?raw=true "Authn Server")
+
+Access Denied for invalid scope.
+![ScreenShot](/screenshots/Access_Denied_Response1.jpg?raw=true "Authn Server")
+![ScreenShot](/screenshots/Access_Denied_Response2.jpg?raw=true "Authn Server")
